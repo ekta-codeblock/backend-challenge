@@ -4,7 +4,7 @@
 git clone <repo>
 cd pc-node-api
 npm install
-cp .env.example .env # edit DB credentials
+cp .env.dev .env # edit DB credentials
 npx prisma migrate dev --name init
 npx ts-node prisma/seed.ts
 npm run dev
